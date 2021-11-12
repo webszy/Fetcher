@@ -1,2 +1,2 @@
 # Fetcher
-next generation requst lib based on fetch
+next generation request lib based on fetch

@@ -1,0 +1,29 @@
+{
+  "name": "fetcher",
+  "version": "1.0.0",
+  "author": "web.szy",
+  "homepage": "https://github.com/webszy/Fetcher",
+  "keywords": ["ajax","request","fetch"],
+  "description": "next generation request lib based on fetch",
+  "main": "src/main.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webszy/Fetcher.git"
+  },
+  "bugs": "https://github.com/webszy/Fetcher/issues",
+  "license": "BSD",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "tslib": "^2.2.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.6.4",
+    "vite-plugin-banner": "^0.1.3"
+  },
+  "dependencies": {
+    "@vitejs/plugin-legacy": "^1.6.2"
+  }
+}
