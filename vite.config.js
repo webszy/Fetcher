@@ -1,14 +1,22 @@
 import { defineConfig } from 'vite'
 import * as path from 'path'
-import legacy from '@vitejs/plugin-legacy'
 import Banner from 'vite-plugin-banner'
-import {banner,name,version,homepage,author} from './package.json'
+import {version,homepage,author,description} from './package.json'
 export default defineConfig({
   plugins:[
-    legacy({
-      targets: ["> 1%", "last 4 versions", "not dead"]
-    }),
-    Banner(` banner\n name: ${name};version: ${version};author: ${author};homepage:${homepage};`)
+    Banner(`
+ _______  _______ .___________.  ______  __    __   _______ .______      
+|   ____||   ____||           | /      ||  |  |  | |   ____||   _  \\     
+|  |__   |  |__   \`---|  |----\`|  ,----'|  |__|  | |  |__   |  |_)  |    
+|   __|  |   __|      |  |     |  |     |   __   | |   __|  |      /     
+|  |     |  |____     |  |     |  \`----.|  |  |  | |  |____ |  |\\  \\----.
+|__|     |_______|    |__|      \\______||__|  |__| |_______|| _| \`._____|
+ name: Fetcher;
+ description:${description};
+ version: ${version};
+ author: ${author};
+ homepage:${homepage};\n`
+    )
   ],
   build: {
     lib: {
